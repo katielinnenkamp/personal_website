@@ -346,12 +346,18 @@ textarea:focus-visible {
 
 .hero::before {
   position: absolute;
-  top: 3.5rem;
-  right: 7%;
-  width: 17rem;
-  height: 17rem;
-  border: 1px solid rgba(49, 95, 75, 0.18);
+  top: 2rem;
+  right: 5%;
+  width: 20rem;
+  height: 20rem;
   border-radius: 55% 45% 62% 38% / 42% 58% 42% 58%;
+  background:
+    radial-gradient(
+      circle at 60% 40%,
+      rgba(195, 149, 69, 0.12),
+      transparent 70%
+    );
+  border: 2px solid rgba(49, 95, 75, 0.12);
   content: "";
   transform: rotate(12deg);
 }
@@ -399,19 +405,48 @@ textarea:focus-visible {
 }
 
 .profile-mark {
+  position: relative;
   display: grid;
   width: clamp(11rem, 20vw, 15rem);
   aspect-ratio: 1;
   place-items: center;
-  border: 1px solid rgba(49, 95, 75, 0.25);
   border-radius: 56% 44% 60% 40% / 44% 55% 45% 56%;
-  background: var(--color-primary);
-  box-shadow: var(--shadow-medium);
+  background:
+    radial-gradient(
+      circle at 35% 35%,
+      rgba(255, 255, 255, 0.15),
+      transparent 50%
+    ),
+    var(--color-primary);
+  box-shadow:
+    var(--shadow-medium),
+    inset 0 2px 8px rgba(255, 255, 255, 0.1);
   color: #ffffff;
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 6vw, 4.8rem);
   font-weight: 600;
   transform: rotate(2deg);
+}
+
+.profile-mark::before {
+  position: absolute;
+  inset: -0.75rem;
+  border: 2px solid rgba(49, 95, 75, 0.2);
+  border-radius: 52% 48% 58% 42% / 46% 54% 46% 54%;
+  content: "";
+  transform: rotate(-4deg);
+}
+
+.profile-mark::after {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--color-gold);
+  opacity: 0.7;
+  content: "";
 }
 
 
