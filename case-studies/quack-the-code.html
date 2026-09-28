@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Case study: designing QuackTheCode, an educational game that turns programming exercises into level objectives with explanatory error states."
+    >
+
+    <title>QuackTheCode — Case Study | Kathryn Linnenkamp</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">
+    Skip to main content
+</a>
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a class="brand" href="../index.html">
+            Kathryn Linnenkamp
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+
+            <ul>
+                <li>
+                    <a href="../design_work.html" aria-current="page">
+                        Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../personal_projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../about_me.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../contact_information.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main id="main-content">
+
+    <section class="case-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                Case Study
+            </p>
+
+            <h1>
+                QuackTheCode
+            </h1>
+
+            <p class="case-tagline">
+                An educational game that treats each programming exercise as
+                a level objective, built so beginners get feedback on their
+                reasoning rather than a bare pass or fail.
+            </p>
+
+            <div class="case-meta">
+
+                <div>
+                    <span>
+                        Role
+                    </span>
+                    <strong>
+                        UX Design &amp; Development
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Tools
+                    </span>
+                    <strong>
+                        UX Flow, Figma, JavaScript
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Timeline
+                    </span>
+                    <strong>
+                        In development
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Scope
+                    </span>
+                    <strong>
+                        Level design, UX, front-end build
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="case-section">
+
+                <h2>
+                    The problem
+                </h2>
+
+                <p>
+                    Most beginner coding practice is a wall of text and a
+                    blank editor. Learners hit an error, get told the answer
+                    is wrong, and have no way to tell whether they misread the
+                    problem, misunderstood the concept, or simply made a typo.
+                </p>
+
+                <p>
+                    That ambiguity is where people quit. A correct answer
+                    teaches less than an incorrect one that explains what went
+                    wrong, so I designed QuackTheCode around making the failure
+                    state the most informative screen in the product.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Approach
+                </h2>
+
+                <p>
+                    I mapped the full player journey before drawing any
+                    screens, looking specifically for every point where a
+                    learner could be stuck and have no way forward. The level
+                    structure came out of that map.
+                </p>
+
+                <ol class="process-list">
+
+                    <li>
+                        <h3>
+                            Journey map
+                        </h3>
+                        <p>
+                            Traced a first-time player from opening the game
+                            to completing their first challenge, marking
+                            every point of uncertainty and every dead end.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            Level curve
+                        </h3>
+                        <p>
+                            Sequenced challenges from syntax recall up to
+                            multi-step logic, introducing one new idea at a
+                            time rather than testing several at once.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            Error states
+                        </h3>
+                        <p>
+                            Wrote the failure states first, then designed
+                            around them — deciding what each wrong answer
+                            should teach before deciding what success looks
+                            like.
+                        </p>
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Key design decisions
+                </h2>
+
+                <figure class="case-figure">
+                    <img
+                        src="../images/work/quack-the-code-cover.svg"
+                        alt="QuackTheCode shown as a split screen, with a dark code editor on the left and the challenge brief with a run button on the right."
+                        width="800"
+                        height="500"
+                    >
+                    <figcaption>
+                        The split-screen layout. The brief stays visible
+                        while the player writes, so the objective never has
+                        to be memorised before starting.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    <strong>The brief never leaves the screen.</strong> The
+                    challenge description sits beside the editor rather than
+                    on a previous screen. Beginners lose the thread of a
+                    multi-step objective the moment they have to remember it,
+                    and the layout removes that opportunity entirely.
+                </p>
+
+                <p>
+                    <strong>Errors explain, they don't reject.</strong> When
+                    code fails, the game names what it was looking for and
+                    points at the relevant line. A wrong answer is the moment
+                    with the most teaching value, so it gets the most
+                    deliberate design.
+                </p>
+
+                <p>
+                    <strong>One idea per level.</strong> Each challenge
+                    introduces a single concept. Bundling concepts made early
+                    levels feel harder than they were and produced failures
+                    players couldn't attribute to anything they'd just
+                    learned.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Outcome
+                </h2>
+
+                <p>
+                    The game is still in progress, with the level structure,
+                    core loop, and error-state pattern established. The
+                    remaining work is content — more challenges and levels —
+                    rather than redesign.
+                </p>
+
+                <p>
+                    Replace this with any play-test findings you have. In
+                    particular, the error states are the part most worth
+                    testing with someone who has never written code.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    What I'd do next
+                </h2>
+
+                <p>
+                    The biggest gap is that the game has no way to show
+                    progress. A learner who closes the tab has no record of
+                    what they solved, and a level list without any sense of
+                    movement removes most of the motivation the game design is
+                    built on. That is the first thing I'd add.
+                </p>
+
+            </div>
+
+
+            <div class="case-footer-nav">
+
+                <a
+                    class="button button-secondary"
+                    href="../design_work.html"
+                >
+                    ← All work
+                </a>
+
+                <p>
+                    Next project:
+                    <a href="ghost-house.html">
+                        Ghost House
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-content">
+
+        <p>
+            © 2026 Kathryn Linnenkamp
+        </p>
+
+        <div class="footer-links">
+
+            <a href="../design_work.html">
+                Work
+            </a>
+
+            <a href="../about_me.html">
+                About
+            </a>
+
+            <a href="../contact_information.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

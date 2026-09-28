@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Case study: interface and level design for Ghost House, a three-part Unity game built around anomaly detection, puzzles, and platforming."
+    >
+
+    <title>Ghost House — Case Study | Kathryn Linnenkamp</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">
+    Skip to main content
+</a>
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a class="brand" href="../index.html">
+            Kathryn Linnenkamp
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+
+            <ul>
+                <li>
+                    <a href="../design_work.html" aria-current="page">
+                        Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../personal_projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../about_me.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../contact_information.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main id="main-content">
+
+    <section class="case-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                Case Study
+            </p>
+
+            <h1>
+                Ghost House
+            </h1>
+
+            <p class="case-tagline">
+                A three-part Unity game where the interface is the main source
+                of tension — the HUD only reveals what the player has earned
+                the right to see.
+            </p>
+
+            <div class="case-meta">
+
+                <div>
+                    <span>
+                        Role
+                    </span>
+                    <strong>
+                        Game Design &amp; UI
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Tools
+                    </span>
+                    <strong>
+                        Unity, C#, Figma
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Timeline
+                    </span>
+                    <strong>
+                        Completed
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Scope
+                    </span>
+                    <strong>
+                        Level design, interaction, UI
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="case-section">
+
+                <h2>
+                    The problem
+                </h2>
+
+                <p>
+                    Ghost House is set in a house that is actively breaking
+                    down. The design question was how much of that to show at
+                    any moment. A HUD that reports every anomaly removes the
+                    tension the anomalies exist to create, and a HUD that
+                    reports nothing makes the game unfair rather than
+                    mysterious.
+                </p>
+
+                <p>
+                    The answer had to hold across three very different kinds
+                    of gameplay — observation, puzzle solving, and platforming
+                    — without becoming three separate interfaces.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Approach
+                </h2>
+
+                <p>
+                    I designed the three sections in the order players meet
+                    them, because the section a player is in determines what
+                    information the HUD is allowed to carry.
+                </p>
+
+                <ol class="process-list">
+
+                    <li>
+                        <h3>
+                            Section one
+                        </h3>
+                        <p>
+                            Anomaly detection. Players identify unusual
+                            changes in a room, and the HUD degrades as their
+                            signal gets noisier.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            Section two
+                        </h3>
+                        <p>
+                            A seven-room puzzle sequence. The interface
+                            recedes almost entirely and the environment
+                            carries the information instead.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            Section three
+                        </h3>
+                        <p>
+                            Parkour platforming. A minimal traversal HUD
+                            returns, tuned to stay readable while moving
+                            quickly.
+                        </p>
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Key design decisions
+                </h2>
+
+                <figure class="case-figure">
+                    <img
+                        src="../images/work/ghost-house-cover.svg"
+                        alt="The Ghost House anomaly detection interface, showing a signal trace, a bar readout, and a row of rooms with one highlighted."
+                        width="800"
+                        height="500"
+                    >
+                    <figcaption>
+                        The anomaly readout. Signal strength is the
+                        measurement, the bar chart is the player's working
+                        out, and the room row confirms the call — the
+                        same three elements carry all three jobs.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    <strong>Signal strength is the puzzle.</strong> In the
+                    anomaly section, the player's job is to judge whether a
+                    reading is normal. Making the meter itself the thing being
+                    read means the skill being tested is interpretation, not
+                    pattern-matching against a highlighted object.
+                </p>
+
+                <p>
+                    <strong>The HUD earns its information.</strong> Each
+                    section reveals only what it needs. The puzzle sequence
+                    shows almost nothing, which is what makes it tense — and
+                    because the UI already taught the player how to read the
+                    house in section one, the silence is comprehensible
+                    rather than confusing.
+                </p>
+
+                <p>
+                    <strong>No markers on important objects.</strong>
+                    Lighting and camera framing do the pointing. An
+                    interaction prompt only appears once the player is close
+                    enough, so the world reads as a place first and a
+                    mechanism second.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Outcome
+                </h2>
+
+                <p>
+                    Ghost House shipped as a complete three-section experience
+                    with all three sections connected into one continuous
+                    run, playable as a Unity Play build.
+                </p>
+
+                <p>
+                    If you have playtest feedback from this one — especially
+                    on whether players found the puzzle section fair without
+                    HUD support — that belongs here. It is the most useful
+                    thing you could add to this case study.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    What I'd do next
+                </h2>
+
+                <p>
+                    The three sections escalate in difficulty but not in
+                    consequence. There is no fail state, so a player who
+                    struggles simply spends longer, which flattens the stakes
+                    the anomaly section works hard to create. Adding a real
+                    cost for missing an anomaly is the change I'd make first.
+                </p>
+
+            </div>
+
+
+            <div class="case-footer-nav">
+
+                <a
+                    class="button button-secondary"
+                    href="../design_work.html"
+                >
+                    ← All work
+                </a>
+
+                <p>
+                    Next project:
+                    <a href="game-archive.html">
+                        Game Archive
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-content">
+
+        <p>
+            © 2026 Kathryn Linnenkamp
+        </p>
+
+        <div class="footer-links">
+
+            <a href="../design_work.html">
+                Work
+            </a>
+
+            <a href="../about_me.html">
+                About
+            </a>
+
+            <a href="../contact_information.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

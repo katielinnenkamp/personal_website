@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Game Archive interface with a grid of retro game tiles">
+  <defs>
+    <linearGradient id="ga-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9eee4"/>
+      <stop offset="1" stop-color="#f1dfd2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#ga-bg)"/>
+
+  <rect x="0" y="0" width="800" height="52" fill="#214435"/>
+  <circle cx="34" cy="26" r="7" fill="#b85c3d"/>
+  <rect x="56" y="20" width="132" height="12" rx="6" fill="#f6f1e7" opacity="0.9"/>
+  <rect x="620" y="20" width="72" height="12" rx="6" fill="#f6f1e7" opacity="0.35"/>
+  <rect x="706" y="20" width="60" height="12" rx="6" fill="#c39545" opacity="0.7"/>
+
+  <rect x="48" y="86" width="300" height="26" rx="13" fill="#315f4b" opacity="0.22"/>
+  <rect x="48" y="126" width="180" height="10" rx="5" fill="#667067" opacity="0.45"/>
+
+  <g>
+    <rect x="48" y="164" width="216" height="150" rx="18" fill="#fffdf8" stroke="#d8d4c8"/>
+    <circle cx="98" cy="212" r="20" fill="#b85c3d" opacity="0.28"/>
+    <rect x="128" y="200" width="94" height="11" rx="5.5" fill="#243027" opacity="0.6"/>
+    <rect x="128" y="220" width="62" height="9" rx="4.5" fill="#667067" opacity="0.45"/>
+    <rect x="72" y="266" width="120" height="24" rx="12" fill="#315f4b" opacity="0.16"/>
+  </g>
+
+  <g>
+    <rect x="292" y="164" width="216" height="150" rx="18" fill="#fffdf8" stroke="#d8d4c8"/>
+    <circle cx="342" cy="212" r="20" fill="#315f4b" opacity="0.26"/>
+    <rect x="372" y="200" width="104" height="11" rx="5.5" fill="#243027" opacity="0.6"/>
+    <rect x="372" y="220" width="70" height="9" rx="4.5" fill="#667067" opacity="0.45"/>
+    <rect x="316" y="266" width="96" height="24" rx="12" fill="#c39545" opacity="0.26"/>
+  </g>
+
+  <g>
+    <rect x="536" y="164" width="216" height="150" rx="18" fill="#fffdf8" stroke="#c39545" stroke-opacity="0.5"/>
+    <circle cx="586" cy="212" r="20" fill="#c39545" opacity="0.34"/>
+    <rect x="616" y="200" width="88" height="11" rx="5.5" fill="#243027" opacity="0.6"/>
+    <rect x="616" y="220" width="58" height="9" rx="4.5" fill="#667067" opacity="0.45"/>
+    <rect x="560" y="266" width="84" height="24" rx="12" fill="#b85c3d" opacity="0.2"/>
+  </g>
+
+  <g>
+    <rect x="48" y="336" width="216" height="128" rx="18" fill="#fffdf8" stroke="#d8d4c8"/>
+    <rect x="72" y="360" width="168" height="10" rx="5" fill="#243027" opacity="0.32"/>
+    <rect x="72" y="382" width="130" height="10" rx="5" fill="#243027" opacity="0.22"/>
+    <rect x="72" y="404" width="150" height="10" rx="5" fill="#243027" opacity="0.16"/>
+    <rect x="72" y="426" width="96" height="10" rx="5" fill="#243027" opacity="0.12"/>
+  </g>
+
+  <g>
+    <rect x="292" y="336" width="216" height="128" rx="18" fill="#fffdf8" stroke="#d8d4c8"/>
+    <circle cx="338" cy="378" r="26" fill="none" stroke="#b85c3d" stroke-opacity="0.5" stroke-width="3"/>
+    <path d="M338 352 A26 26 0 0 1 364 378" fill="none" stroke="#315f4b" stroke-width="5" stroke-linecap="round"/>
+    <rect x="378" y="362" width="96" height="11" rx="5.5" fill="#243027" opacity="0.5"/>
+    <rect x="378" y="382" width="66" height="9" rx="4.5" fill="#667067" opacity="0.45"/>
+    <rect x="316" y="424" width="110" height="18" rx="9" fill="#315f4b" opacity="0.14"/>
+  </g>
+
+  <g>
+    <rect x="536" y="336" width="216" height="128" rx="18" fill="#fffdf8" stroke="#d8d4c8"/>
+    <rect x="560" y="360" width="70" height="10" rx="5" fill="#243027" opacity="0.3"/>
+    <g fill="#315f4b" opacity="0.22">
+      <rect x="560" y="392" width="16" height="48" rx="4"/>
+      <rect x="588" y="404" width="16" height="36" rx="4"/>
+      <rect x="616" y="380" width="16" height="60" rx="4"/>
+      <rect x="644" y="398" width="16" height="42" rx="4"/>
+    </g>
+    <g fill="#c39545" opacity="0.6">
+      <rect x="672" y="412" width="16" height="28" rx="4"/>
+    </g>
+    <rect x="700" y="404" width="30" height="10" rx="5" fill="#243027" opacity="0.18"/>
+  </g>
+</svg>

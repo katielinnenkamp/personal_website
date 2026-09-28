@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Case study: redesigning Game Archive, a browser-based collection of casual mini-games, around a single browse-and-play loop."
+    >
+
+    <title>Game Archive — Case Study | Kathryn Linnenkamp</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">
+    Skip to main content
+</a>
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a class="brand" href="../index.html">
+            Kathryn Linnenkamp
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+
+            <ul>
+                <li>
+                    <a href="../design_work.html" aria-current="page">
+                        Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../personal_projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../about_me.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../contact_information.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main id="main-content">
+
+    <!--
+        CASE STUDY TEMPLATE
+        Sections in order: Hero + meta, Overview, Process,
+        Design decisions, Outcome, Reflection, Next project.
+        Copy this file to case-studies/your-project.html and replace
+        the contents. Keep images at 16:10 to match the cover ratio.
+    -->
+
+    <section class="case-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                Case Study
+            </p>
+
+            <h1>
+                Game Archive
+            </h1>
+
+            <p class="case-tagline">
+                Rebuilding a collection of browser mini-games around one
+                browse-and-play loop, so a new player starts playing in a
+                single click instead of hunting through a menu.
+            </p>
+
+            <div class="case-meta">
+
+                <div>
+                    <span>
+                        Role
+                    </span>
+                    <strong>
+                        Product Design &amp; Front-End
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Tools
+                    </span>
+                    <strong>
+                        Figma, HTML, CSS, JavaScript
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Timeline
+                    </span>
+                    <strong>
+                        Ongoing
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Scope
+                    </span>
+                    <strong>
+                        UI system, interaction design, build
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="case-section">
+
+                <h2>
+                    The problem
+                </h2>
+
+                <p>
+                    Game Archive started as a personal project to recreate the
+                    feeling of old game compilations. The games themselves
+                    worked, but each one had grown its own layout, its own
+                    button styles, and its own idea of where the player was.
+                </p>
+
+                <p>
+                    The result was a collection that felt assembled rather
+                    than designed. Switching between games meant relearning
+                    the interface, and adding a new game meant designing a new
+                    interface with it. That cost was the real problem — not
+                    any single screen, but the fact that nothing carried over.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Approach
+                </h2>
+
+                <p>
+                    I treated the archive itself as the product and the games
+                    as content. That reframing let me design the container
+                    first, so each new game only had to describe itself rather
+                    than design an interface from scratch.
+                </p>
+
+                <ol class="process-list">
+
+                    <li>
+                        <h3>
+                            Audit
+                        </h3>
+                        <p>
+                            Catalogued every screen and control across the
+                            five games and grouped them by the job they were
+                            doing, not the game they belonged to.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            System
+                        </h3>
+                        <p>
+                            Built one card, one panel, and one control set in
+                            Figma, then rebuilt every game on top of it
+                            without touching game logic.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            Verify
+                        </h3>
+                        <p>
+                            Tested the flow on people who had never seen the
+                            project and watched where they hesitated, then cut
+                            everything they didn't need.
+                        </p>
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Key design decisions
+                </h2>
+
+                <figure class="case-figure">
+                    <img
+                        src="../images/work/game-archive-cover.svg"
+                        alt="The Game Archive card grid, where each game is shown as a tile with its category, title, and a single call to action."
+                        width="800"
+                        height="500"
+                    >
+                    <figcaption>
+                        The tile grid. Every game exposes the same three
+                        pieces of information in the same position, so
+                        scanning the archive is a single visual pass.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    <strong>One loop, not one menu.</strong> The landing view
+                    is the playable state. Tapping a card opens the game in
+                    place, and returning puts the player back exactly where
+                    they were in the grid. There is no separate "play" screen
+                    to navigate through.
+                </p>
+
+                <p>
+                    <strong>State lives on the card.</strong> Each tile carries
+                    its own category, title, and progress state, so a player
+                    can tell what's already been tried without opening
+                    anything. The archive became browsable instead of a list
+                    of links.
+                </p>
+
+                <p>
+                    <strong>Legacy on purpose.</strong> The visual language is
+                    retro, but the interaction model is not. Everything is
+                    keyboard reachable, every control has a visible focus
+                    state, and no interaction depends on hover alone.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    Outcome
+                </h2>
+
+                <p>
+                    All five games now share one interface, which means a new
+                    game is a content addition rather than a design project.
+                    The archive has grown to include new entries without any
+                    of them needing a layout of their own.
+                </p>
+
+                <p>
+                    Replace this paragraph with numbers you can defend — play
+                    counts, time-to-first-play, or feedback quotes. If you do
+                    not have them yet, leave the qualitative result here
+                    instead of estimating.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>
+                    What I'd do next
+                </h2>
+
+                <p>
+                    The system works for five games, but it has not been
+                    pressure-tested at twenty. Before scaling up I would add a
+                    lightweight filter for category and play state, and I would
+                    check the card grid against a narrower viewport range —
+                    a three-column grid is the part of this design most likely
+                    to break.
+                </p>
+
+            </div>
+
+
+            <div class="case-footer-nav">
+
+                <a
+                    class="button button-secondary"
+                    href="../design_work.html"
+                >
+                    ← All work
+                </a>
+
+                <p>
+                    Next project:
+                    <a href="quack-the-code.html">
+                        QuackTheCode
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-content">
+
+        <p>
+            © 2026 Kathryn Linnenkamp
+        </p>
+
+        <div class="footer-links">
+
+            <a href="../design_work.html">
+                Work
+            </a>
+
+            <a href="../about_me.html">
+                About
+            </a>
+
+            <a href="../contact_information.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
